@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+        .trafikışık {
+            height: 300px;
+            width: 100px;
+            border: 5px solid black;
+        }
+        .ışık {
+            margin-top: 10px;
+            margin-left: 10px;
+            height: 75px;
+            width: 75px;
+            border: 3px solid black;
+            border-radius: 50%;
+        }
+        .buton {
+            padding-top: 10px;
+            margin-top: 10px;
+            width: 100px;
+            height: 50px;
+            border: 3px solid black;
+            text-align: center;
+        }
+        #kırmızı {
+            background-color: red;
+        }
+        #sarı {
+            background-color: yellow;
+        }
+        #yeşil {
+            background-color: green;
+        }
+
+
+        </style>
+        <script>
+            function kırmızıyap() {
+                var kirmizi = document.getElementById('kirmizi');
+                kirmizi.style.backgroundColor = 'red';
+            }
+            function sarıyap() {
+                var sari = document.getElementById('sari');
+                sari.style.backgroundColor = 'yellow';
+            }
+            function yeşilyap() {
+                var yeşıl = document.getElementById('yeşıl');
+                yeşıl.style.backgroundColor = 'green';
+            }
+        </script>
+
+
+    </head>
+    <body>
+        <div class="trafikışık">
+            <div class="ışık" id="kirmizi"></div>
+            <div class="ışık" id="sari"></div>
+            <div class="ışık" id="yeşıl"></div>
+        </div>
+
+        <button onclick="kırmızıyap()" class="buton" id="kırmızı">Kırmızı</button>
+        <button onclick="sarıyap()" class="buton" id="sarı">Sarı</button>
+        <button onclick="yeşilyap()" class="buton" id="yeşil">Yeşil</button>
+        
+    </body>
+</html>
